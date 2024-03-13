@@ -1,2 +1,2 @@
 # OOP_Homework progress
-01 - 0/7
+01 - 7/7
