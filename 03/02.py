@@ -3,7 +3,7 @@ class ReversedList:
         self.lst = lst
         lst1 = self.lst.copy()
         for i in range(len(lst1)):
-            self.lst[i] = lst1[i-1]
+            self.lst[i] = lst1[-(i+1)]
         lst1.clear()
 
     def __len__(self):
@@ -12,9 +12,3 @@ class ReversedList:
     def __getitem__(self, key):
         return self.lst[key]
 
-
-# Ваш код
-
-rl = ReversedList([10, 20, 30])
-for i in range(len(rl)):
-    print(rl[i])
